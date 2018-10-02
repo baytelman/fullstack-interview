@@ -1,8 +1,6 @@
-# Goodtalk • Interview
+# Goodtalk • Interview • Letters game!
 
-## Letters game!
-
-### Create a React JS or React Native app
+## Create a React JS or React Native app
 
 - Choose whatever would be easier/faster for you – React JS or React-Native.
 - You can use any boilerplate or start project. If you need help with this, let us know and we will share a quick-starter project promptly.
@@ -27,15 +25,13 @@ The user selects the A tile by clicking it. The formed word is now `FA`. Finally
 If the user clicks the reset button, the board is reset.
 
 ```
-          x              (x)             (x)             (x)
-
- A  B  C  D      A  B  C  D     [A] B  C  D     [A] B  C  D
- E  F  G  H      E [F] G  H      E [F] G  H      E [F] G  H
- I  J  K  L      I  J  K  L      I  J  K  L      I  J  K  L
- M  N  O  P      M  N  O  P      M  N  O  P      M [N] O  P
-
-[          ]    [ F        ]    [ FA       ]    [ FAN      ]
-
+          	x                  (x)                 (x)                 (x)
+ A  B  C  D          A  B  C  D         [A] B  C  D         [A] B  C  D
+ E  F  G  H          E [F] G  H          E [F] G  H          E [F] G  H
+ I  J  K  L          I  J  K  L          I  J  K  L          I  J  K  L
+ M  N  O  P          M  N  O  P          M  N  O  P          M [N] O  P
+        
+[          ]        [ F        ]        [ FA       ]        [ FAN      ]
 ```
 
 ---
@@ -103,3 +99,6 @@ Your deliverable should satify 3 of the following requirements:
 - Shuffle the tiles when your server starts, confirming that at least one of the words of the dictionary can be formed. Then, serve the modified board.
 - Add a player id to the validation request, keeping track of how many valid words each player has submitted. Add an endpoint to expose these scores.
 - After successful validation, store the entry in a database and add to your response if the entry existed previously.
+
+## Thanks for your time!
+The Goodtalk team!
