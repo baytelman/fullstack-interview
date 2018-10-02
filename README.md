@@ -9,7 +9,7 @@
 ### The app
 
 - Our game will present a board with 16 tiles (4x4) in the center of the screen.
-- Each tile has a letter read from a given json file (see [`test-board-1.json`](files/test-board-1.json)).
+- Each tile has a letter read from a given json file (see [`test-board-1.json`](files/test-board-1.json) and [`test-board-2.json`](files/test-board-2.json)).
 - The user can select tile by clicking/tapping them.
 - At the bottom of the board, display the word formed by the selected tiles.
 - Add a button `(x)` to reset the board, deselecting all tiles and clearing the word.
@@ -68,7 +68,7 @@ Your deliverable should satisfy 3 of the following requirements:
 - Use responsive display – Look amazing in mobile and desktop (ReactJS only)
 - Use fancy animations.
 - Deselect tiles, so you can enter [T][R][A][P] and then remove the [R].
-- Validate if the word is contained in a [`dictionary.json`](files/dictionary.json) file.
+- Validate if the word is contained in a [`dictionary.json`](files/dictionary.json) file. You can use our secondary board file 
 - Only allow neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not. 
 
@@ -86,7 +86,7 @@ Implement a server using Node (ideally using Express, but other frameworks would
 - Serve the static files ([`board.json`](files/test-board-1.json) and [`dictionary.json`](files/dictionary.json)) via GET methods.
 - Validate a user's answer (entry) via POST method:
     - The body of the request should be a JSON including the index/location of the tiles.
-    - Check the word formed with the given tiles exists in the dictionary file.
+    - Check the word formed with the given tiles exists in the [`dictionary file`](files/dictionary.json).
     
 ### Choose 2 (and only 2) features
 
@@ -96,7 +96,7 @@ Your deliverable should satisfy 3 of the following requirements:
 
 - Modify your validation only allowing neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not.  
-- Shuffle the tiles when your server starts, confirming that at least one of the words of the dictionary can be formed. Then, serve the modified board.
+- Shuffle the tiles when your server starts, confirming that at least one of the words of the [`dictionary`](files/dictionary.json) can be formed. Then, serve the modified board.
 - Add a player id to the validation request, keeping track of how many valid words each player has submitted. Add an endpoint to expose these scores.
 - After successful validation, store the entry in a database and add to your response if the entry existed previously.
 
@@ -187,6 +187,43 @@ new MyServer({PORT: 8080}).start((request, response) => {
 - Q: This coding challenge is too long. Is it OK if I implement it partially?
     - Although we recognize this exercise may take some time, it does measure if you have the skills we need to work at Goodtalk.
     - Submitting an incomplete solution is acceptable, specially if you explain the reasons. However, a complete solution will increase the likelihood of being selected, and it will save time during our interview. 
+
+---
+
+## Playing the Letters Game with our secondary file
+
+The [`secondary board file`](files/test-board-2.json) describes the following board:
+```
+L I S T
+O F A T
+S T R S
+O R A Y
+```
+
+When playing with the "neighbors rule", this board contains (at least) the following English words defined in [`our (limited) dictionary file`](files/dictionary.json).
+
+- ARTS
+- FAST
+- FIST
+- LIST
+- RATS
+- SOFT
+- SORT
+- START
+
+When playing *without* the "neighbors rule", there are plenty more words! We can find all the words above, plus other words like:
+
+- LOAF
+- SOY
+- TOY
+- TOYS
+
+This board (obviously) does NOT include the following words from our [`dictionary file`](files/dictionary.json) (because there's neither D, E or U present in the board):
+
+- LOAD
+- LURE
+- RENT
+- STREET
 
 ## Thanks for your time!
 The Goodtalk team!
