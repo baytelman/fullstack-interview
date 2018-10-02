@@ -16,7 +16,7 @@
 
 #### Example
 
-In the following example, the initial board presents the content of the [`test json file 1`](files/test-board-1.json), and has no tile selected. There's no formed word either. The reset button is disabled.
+In the following example, the initial board presents the content of the [test json file 1](files/test-board-1.json), and has no tile selected. There's no formed word either. The reset button is disabled.
 
 Then, the user clicks the F tile, which gets selected. The formed word is now `F`. The reset button is now enabled.
 
@@ -68,7 +68,7 @@ Your deliverable should satisfy 3 of the following requirements:
 - Use responsive display – Look amazing in mobile and desktop (ReactJS only)
 - Use fancy animations.
 - Deselect tiles, so you can enter [T][R][A][P] and then remove the [R].
-- Validate if the word is contained in a [`dictionary.json`](files/dictionary.json) file. You can use our secondary board file 
+- Validate if the word is contained in a [`dictionary.json`](files/dictionary.json) file. You should use our [secondary board file](files/test-board-2.json), which contains many words from the dictionary!
 - Only allow neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not. 
 
@@ -86,7 +86,7 @@ Implement a server using Node (ideally using Express, but other frameworks would
 - Serve the static files ([`board.json`](files/test-board-1.json) and [`dictionary.json`](files/dictionary.json)) via GET methods.
 - Validate a user's answer (entry) via POST method:
     - The body of the request should be a JSON including the index/location of the tiles.
-    - Check the word formed with the given tiles exists in the [`dictionary file`](files/dictionary.json).
+    - Check the word formed with the given tiles exists in the [dictionary file](files/dictionary.json).
     
 ### Choose 2 (and only 2) features
 
@@ -96,7 +96,7 @@ Your deliverable should satisfy 3 of the following requirements:
 
 - Modify your validation only allowing neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not.  
-- Shuffle the tiles when your server starts, confirming that at least one of the words of the [`dictionary`](files/dictionary.json) can be formed. Then, serve the modified board.
+- Shuffle the tiles when your server starts, confirming that at least one of the words of the [dictionary](files/dictionary.json) can be formed. Then, serve the modified board.
 - Add a player id to the validation request, keeping track of how many valid words each player has submitted. Add an endpoint to expose these scores.
 - After successful validation, store the entry in a database and add to your response if the entry existed previously.
 
@@ -192,7 +192,7 @@ new MyServer({PORT: 8080}).start((request, response) => {
 
 ## Playing the Letters Game with our secondary file
 
-The [`secondary board file`](files/test-board-2.json) describes the following board:
+The [secondary board file](files/test-board-2.json) describes the following board:
 ```
 L I S T
 O F A T
@@ -200,7 +200,7 @@ S T R S
 O R A Y
 ```
 
-When playing with the "neighbors rule", this board contains (at least) the following English words defined in [`our (limited) dictionary file`](files/dictionary.json).
+When playing with the "neighbors rule", this board contains (at least) the following English words defined in [our (limited) dictionary file](files/dictionary.json).
 
 - ARTS
 - FAST
@@ -218,7 +218,7 @@ When playing *without* the "neighbors rule", there are plenty more words! We can
 - TOY
 - TOYS
 
-This board (obviously) does NOT include the following words from our [`dictionary file`](files/dictionary.json) (because there's neither D, E or U present in the board):
+This board (obviously) does NOT include the following words from our [dictionary file](files/dictionary.json) (because there's neither D, E or U present in the board):
 
 - LOAD
 - LURE
