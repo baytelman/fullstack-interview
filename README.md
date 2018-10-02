@@ -1,5 +1,7 @@
 # Goodtalk • Interview • Letters game!
 
+We ask you to read this file completely before you code a single line. There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
+
 ## Create a React JS or React Native app
 
 - Choose whatever would be easier/faster for you – React JS or React-Native.
