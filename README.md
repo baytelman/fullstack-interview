@@ -13,7 +13,6 @@ The Goodtalk team!
 
 ## Create a React JS or React Native app
 
-- Choose whatever would be easier/faster for you – React JS or React-Native.
 - You can use any boilerplate or start project. If you need help with this, let us know and we will share a quick-starter project promptly.
 - Keep your code separated from the boilerplate, so it's easier to review your work.
 
@@ -51,14 +50,15 @@ If the user clicks the reset button, the board is reset.
 
 Your deliverable should satisfy all these requirements:
 
-- Explain if you are responding Part 1 (frontend), Part 2 (backend) or both (full stack).
+- Explain if you are responding Part 1 (frontend), Part 2 (backend) or both (full stack). Part 3 is required.
 
-- It should be submitted using the following alternatives:
+- It should be submitted using one of the following alternatives:
     1. bitbucket.org or github.com PRIVATE repo (*Note: Do NOT use a public repo because other candidates could copy your response*).
     1. Upload a compressed file somewhere and send us the URL.
-    1. Email us your code (*Note: Do NOT include `node_modules` or any files we can generate ourselves*).
+    1. Email us your code.
+    - *Note: Do NOT include `node_modules` or any other files that will be auto-generated*.
 
-- It should be include instructions on how to run (installing dependencies, starting it, etc) and shouldn't have any weird environment requirements.
+- It should include instructions on how to run (installing dependencies, starting it, etc) and it shouldn't have any obscure environment requirements.
 
 
 ---
@@ -69,15 +69,17 @@ Your deliverable should satisfy all these requirements:
 ### Required
 
 Implement all the interactions described in sections "The app" and "Example".
+- Choose whatever would be easier/faster for you – React JS or React-Native.
+- Use basic styles to make the application look clean and usable.
 
 ### Choose 3 (and only 3) features
 
-Don't try to satisfy all of them. We need to understand what are you *most comfortable with* as part of your evaluation, so choose whatever is the easiest/simplest/fastest for you!
+Don't try to satisfy all of them. We need to understand what are you *most comfortable with* as part of your evaluation, so choose whatever is the easiest/simplest/fastest for you. If all of these seem easy to you, choose those that would impress us the most!
 
 Your deliverable should satisfy 3 of the following requirements:
 
-- Use responsive display – Look amazing in mobile and desktop (ReactJS only)
-- Use fancy animations.
+- Use responsive display – Look clean and usable, both in multiple screen sizes for mobile and desktop (ReactJS only).
+- Use amazing styles and fancy animations.
 - Deselect tiles, so you can enter [T][R][A][P] and then remove the [R].
 - Validate if the word is contained in a [`dictionary.json`](files/dictionary.json) file. You should use our [secondary board file](files/test-board-2.json), which contains many words from the dictionary!
 - Only allow neighbor tiles to be selected sequentially.
@@ -90,7 +92,7 @@ Your deliverable should satisfy 3 of the following requirements:
 
 ### Required 
 
-Pretend you are creating the backend for our game's lightweight client app, and that all logic will be performed at the server level.
+Pretend you are creating the backend for our game's lightweight client app, and that all logic will be performed at the server level. You do NOT have to implement the client app (or modify your solution for Part 1, if you chose to answer it).
 
 Implement a server using Node (ideally using Express, but other frameworks would work) to serve the following endpoints:
 
