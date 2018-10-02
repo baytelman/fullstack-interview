@@ -9,10 +9,10 @@
 ### The app
 
 - Our game will present a board with 16 tiles (4x4) in the center of the screen.
-- Each tile has a letter read from a given json file (see `test-board-1.json`).
+- Each tile has a letter read from a given json file (see [`test-board-1.json`](files/test-board-1.json)).
 - The user can select tile by clicking/tapping them.
 - At the bottom of the board, display the word formed by the selected tiles.
-- Add a button `(x)` to reset the board, deselecting all tiles and clearning the word.
+- Add a button `(x)` to reset the board, deselecting all tiles and clearing the word.
 
 #### Example
 
@@ -25,13 +25,13 @@ The user selects the A tile by clicking it. The formed word is now `FA`. Finally
 If the user clicks the reset button, the board is reset.
 
 ```
-          	x                  (x)                 (x)                 (x)
- A  B  C  D          A  B  C  D         [A] B  C  D         [A] B  C  D
- E  F  G  H          E [F] G  H          E [F] G  H          E [F] G  H
- I  J  K  L          I  J  K  L          I  J  K  L          I  J  K  L
- M  N  O  P          M  N  O  P          M  N  O  P          M [N] O  P
-        
-[          ]        [ F        ]        [ FA       ]        [ FAN      ]
+              ( )                 (x)                 (x)                 (x)
+    A  B  C  D          A  B  C  D         [A] B  C  D         [A] B  C  D
+    E  F  G  H          E [F] G  H          E [F] G  H          E [F] G  H
+    I  J  K  L          I  J  K  L          I  J  K  L          I  J  K  L
+    M  N  O  P          M  N  O  P          M  N  O  P          M [N] O  P
+            
+   [          ]        [ F        ]        [ FA       ]        [ FAN      ]
 ```
 
 ---
@@ -40,7 +40,7 @@ If the user clicks the reset button, the board is reset.
 
 Your deliverable should satisfy all these requirements:
 
-- Explain if you are responding Part 1 (frontend), Part 2 (backend) or both (fullstack).
+- Explain if you are responding Part 1 (frontend), Part 2 (backend) or both (full stack).
 
 - It should be submitted using the following alternatives:
     1. bitbucket.org or github.com PRIVATE repo (*Note: Do NOT use a public repo because other candidates could copy your response*).
@@ -53,7 +53,7 @@ Your deliverable should satisfy all these requirements:
 ---
 
 ## Part 1
-*Only if you want to be considered for Frontend / Fullstack*
+*Only if you want to be considered for Frontend / Full stack*
 
 ### Required
 
@@ -61,21 +61,21 @@ Implement all the interactions described in sections "The app" and "Example".
 
 ### Choose 3 (and only 3) features
 
-Don't try to satisday all of them. We need to understand what are you *most comfortable with* as part of your evaluation, so choose whatever is the easiest/simplest/fastest for you!
+Don't try to satisfy all of them. We need to understand what are you *most comfortable with* as part of your evaluation, so choose whatever is the easiest/simplest/fastest for you!
 
-Your deliverable should satify 3 of the following requirements:
+Your deliverable should satisfy 3 of the following requirements:
 
 - Use responsive display – Look amazing in mobile and desktop (ReactJS only)
 - Use fancy animations.
 - Deselect tiles, so you can enter [T][R][A][P] and then remove the [R].
-- Validate if the word is contained in a `dictionary.json` file.
+- Validate if the word is contained in a [`dictionary.json`](files/dictionary.json) file.
 - Only allow neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not. 
 
 ---
 
 ## Part 2
-*Only if you want to be considered for Backend / Fullstack*
+*Only if you want to be considered for Backend / Full stack*
 
 ### Required 
 
@@ -83,22 +83,110 @@ Pretend you are creating the backend for our game's lightweight client app, and 
 
 Implement a server using Node (ideally using Express, but other frameworks would work) to serve the following endpoints:
 
-- Serve the static files (`board.json` and `dictionary.json`) via GET methods.
+- Serve the static files ([`board.json`](files/test-board-1.json) and [`dictionary.json`](files/dictionary.json)) via GET methods.
 - Validate a user's answer (entry) via POST method:
     - The body of the request should be a JSON including the index/location of the tiles.
     - Check the word formed with the given tiles exists in the dictionary file.
     
 ### Choose 2 (and only 2) features
 
-Don't try to satisday all of them. We need to understand what are you *most comfortable with* as part of your evaluation, so choose whatever is the easiest/simplest/fastest for you!
+Don't try to satisfy all of them. We need to understand what are you *most comfortable with* as part of your evaluation, so choose whatever is the easiest/simplest/fastest for you!
 
-Your deliverable should satify 3 of the following requirements:
+Your deliverable should satisfy 3 of the following requirements:
 
 - Modify your validation only allowing neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not.  
 - Shuffle the tiles when your server starts, confirming that at least one of the words of the dictionary can be formed. Then, serve the modified board.
 - Add a player id to the validation request, keeping track of how many valid words each player has submitted. Add an endpoint to expose these scores.
 - After successful validation, store the entry in a database and add to your response if the entry existed previously.
+
+---
+
+## Part 3
+
+Pretend your co-worker from your current job (clearly not at Goodtalk!) submitted the following code. Imagine all external libraries and functions exist and do whatever they are supposed to do.
+
+- List the most severe problems or improvements opportunities within the following code, listing the worst first.
+
+- What process would you suggest to your team in order to address these issues?
+ 
+```
+const MyServer = require('../../../aug2018/MyServer'); 
+import { MyUtility } from './shared_utils/MyUtility';
+const StringFormat = require('./shared_utils/StringFormat'); 
+
+const username = 'goodtalk-server';
+let password = '8%eHN-dskj@-77';
+
+function saveUser(user_object, owip) {
+	const overrideIfPresent = owip
+	user_object['nombre'] = StringFormat.removeWhitespaces(user_object.nombre)
+	let database = await MyUtility.connect(
+		'mongo://192.144.3.76/database', username, password);
+	database.store(user_object, overrideIfPresent).then({
+		return true;
+	})
+}
+
+let loadUser = async ({userName}) => {
+	let database = await MyUtility.connect(
+		'mongo://192.144.3.76/database', username, password);
+	user = await database.fetch(userName);
+	if (!user) return 'user not found';
+	// Now we return the user:
+	return user
+}
+
+const ADMIN_USER = {
+username: 'admin',
+nombre: 'Arnold Alaska',
+phone: "1-655-099-9283",
+password: "pswRd-!!-776=k"
+};
+
+saveUser(ADMIN_USER, false);
+
+/* Start server */
+new MyServer({PORT: 8080}).start((request, response) => {
+	const user = null;
+	if (request.url = "/login") {
+		/* Params = username + password */
+		user = loadUser(request.params.username);
+		if (user == null) {
+			response.write('user not found');
+		}
+		if (user.password == request.params.password)
+			response.write(JSON.stringify(user))
+		}
+	}
+	if (request.url == "/users") {
+		/* We load the user profile for the profile page */
+		user = loadUser(request.params.username);
+		response.write(JSON.stringify(user))
+	} else {
+		response.write(```
+			<html><body>Welcome to my server</body></html>
+		```)
+	}
+});
+
+```
+
+---
+
+## Frequently asked question
+
+- Q: I really want to implement all the features of the optional section. Should I?
+    - No, you should not: Only implement the listed amount.
+    - We want a team of people with different skills, so understanding your strengths is a plus for us.
+    - In fact, implementing all the features will be interpreted as lack of attention to detail.
+- Q: Can I use external libraries (npm)?
+    - Of course you can!
+    - However, if some functionality is very easy to implement, try do do it yourself (i.e. Don't install a library to figure out if a number is odd/even).
+    - Choosing when and what libraries will speak about your judgement.
+- Q: This coding challenge is too long. Is it OK if I implement it partially?
+    - Although we recognize this exercise may take some time, it does measure if you have the skills we need to work at Goodtalk.
+    - Submitting an incomplete solution is acceptable, specially if you explain the reasons. However, a complete solution will increase the likelihood of being selected, and it will save time during our interview. 
 
 ## Thanks for your time!
 The Goodtalk team!
