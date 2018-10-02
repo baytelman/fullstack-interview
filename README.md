@@ -16,7 +16,7 @@
 
 #### Example
 
-In the following example, the initial board presents the content of the test json file, and has no tile selected. There's no formed word either. The reset button is disabled.
+In the following example, the initial board presents the content of the [`test json file 1`](files/test-board-1.json), and has no tile selected. There's no formed word either. The reset button is disabled.
 
 Then, the user clicks the F tile, which gets selected. The formed word is now `F`. The reset button is now enabled.
 
