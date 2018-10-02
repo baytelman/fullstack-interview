@@ -104,7 +104,7 @@ Your deliverable should satisfy 2 of the following requirements:
 
 ## Part 3
 
-Pretend your co-worker from your current job (clearly not at Goodtalk!) submitted the following code. Imagine all external libraries and functions exist and do whatever they are supposed to do.
+Pretend a co-worker from your current job (clearly not at Goodtalk!) submitted the following code. Imagine all external libraries and functions exist and do whatever they are supposed to do.
 
 - List the most severe problems or improvements opportunities within the following code, listing the worst first.
 
