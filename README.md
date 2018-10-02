@@ -92,7 +92,7 @@ Implement a server using Node (ideally using Express, but other frameworks would
 
 Don't try to satisfy all of them. We need to understand what are you *most comfortable with* as part of your evaluation, so choose whatever is the easiest/simplest/fastest for you!
 
-Your deliverable should satisfy 3 of the following requirements:
+Your deliverable should satisfy 2 of the following requirements:
 
 - Modify your validation only allowing neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not.  
