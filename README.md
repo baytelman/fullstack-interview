@@ -182,7 +182,7 @@ new MyServer({PORT: 8080}).start((request, response) => {
     - In fact, implementing all the features will be interpreted as lack of attention to detail.
 - Q: Can I use external libraries (npm)?
     - Of course you can!
-    - However, if some functionality is very easy to implement, try do do it yourself (i.e. Don't install a library to figure out if a number is odd/even).
+    - However, if some functionality is very easy to implement, try to implement it yourself (i.e. Don't install a library to figure out if a number is odd/even).
     - Choosing when and what libraries will speak about your judgement.
 - Q: This coding challenge is too long. Is it OK if I implement it partially?
     - Although we recognize this exercise may take some time, it does measure if you have the skills we need to work at Goodtalk.
