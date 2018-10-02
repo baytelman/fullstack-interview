@@ -1,6 +1,15 @@
 # Goodtalk • Interview • Letters game!
 
-We ask you to read this file completely before you code a single line. There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
+We ask you to read this file carefully before you begin writing a solution. There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
+
+If you decide to continue with this process, write us back WHEN you expect to submit your solution. This is really important so we can better arrange to wait for you, specially if you want to take a little longer. 
+
+If you decide NOT to continue with this process, let us know! ... So we don't keep sending your reminders.
+
+We sincerely thank you for your interest and your time.
+
+Best, 
+The Goodtalk team!
 
 ## Create a React JS or React Native app
 
