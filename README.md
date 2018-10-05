@@ -1,5 +1,7 @@
 # Goodtalk • Interview • Letters game!
 
+*Version 1.1*
+
 We ask you to read this file carefully before you begin writing a solution. There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
 
 If you decide to continue with this process, write us back WHEN you expect to submit your solution. This is really important so we can better arrange to wait for you, specially if you want to take a little longer. 
@@ -70,20 +72,23 @@ Your deliverable should satisfy all these requirements:
 
 Implement all the interactions described in sections "The app" and "Example".
 - Choose whatever would be easier/faster for you – React JS or React-Native.
-- Use basic styles to make the application look clean and usable.
+- Make it look like the following designs:
+	- ReactJS only: Use *responsive* display for mobile and desktop.
+	
+	- Implement styles using exclusively CSS, not images.
 
-### Choose 3 (and only 3) features
+	- Layour for mobile media:
 
-Don't try to satisfy all of them. We need to understand what are you *most comfortable with* as part of your evaluation, so choose whatever is the easiest/simplest/fastest for you. If all of these seem easy to you, choose those that would impress us the most!
+		![Mobile dimensions.](./files/mobile.png)
 
-Your deliverable should satisfy 3 of the following requirements:
+	- Layout for desktop media (ReactJS only):
 
-- Use responsive display – Look clean and usable, both in multiple screen sizes for mobile and desktop (ReactJS only).
-- Use amazing styles and fancy animations.
+		![Desktop dimensions.](./files/desktop.png)
+
+	- Although element size is different on each media, use the styles/colors above for valid/invalid cases.
+
 - Deselect tiles, so you can enter [T][R][A][P] and then remove the [R].
 - Validate if the word is contained in a [`dictionary.json`](files/dictionary.json) file. You should use our [secondary board file](files/test-board-2.json), which contains many words from the dictionary!
-- Only allow neighbor tiles to be selected sequentially.
-    - In the example, `B C G` would be legal and `F A N` would not. 
 
 ---
 
@@ -92,11 +97,14 @@ Your deliverable should satisfy 3 of the following requirements:
 
 ### Required 
 
-Pretend you are creating the backend for our game's lightweight client app, and that all logic will be performed at the server level. You do NOT have to implement the client app (or modify your solution for Part 1, if you chose to answer it).
+Pretend you are creating the backend for our game's lightweight client app, and that all logic will be performed at the server level. 
+
+You do NOT have to implement the client app (or modify your solution for Part 1, if you chose to answer it).
 
 Implement a server using Node (ideally using Express, but other frameworks would work) to serve the following endpoints:
 
-- Serve the static files ([`board.json`](files/test-board-1.json) and [`dictionary.json`](files/dictionary.json)) via GET methods.
+- Load the content of [`board.json`](files/test-board-1.json) and shuffle the tiles when your server starts. Serve the shuffled board via GET method.
+- Serve the file [`dictionary.json`](files/dictionary.json) statically via GET methods.
 - Validate a user's answer (entry) via POST method:
     - The body of the request should be a JSON including the index/location of the tiles.
     - Check the word formed with the given tiles exists in the [dictionary file](files/dictionary.json).
@@ -109,8 +117,8 @@ Your deliverable should satisfy 2 of the following requirements:
 
 - Modify your validation only allowing neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not.  
-- Shuffle the tiles when your server starts, confirming that at least one of the words of the [dictionary](files/dictionary.json) can be formed. Then, serve the modified board.
-- Add a player id to the validation request, keeping track of how many valid words each player has submitted. Add an endpoint to expose these scores.
+	- During server starts, confirm that at least one of the words of the [dictionary](files/dictionary.json) can be formed with your shuffled board.
+- Add a player id to the validation request, keeping track (in memory) of how many valid words each player has submitted. Add an endpoint to expose these scores.
 - After successful validation, store the entry in a database and add to your response if the entry existed previously.
 
 ---
