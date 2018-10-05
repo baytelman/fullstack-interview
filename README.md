@@ -117,7 +117,7 @@ Your deliverable should satisfy 2 of the following requirements:
 
 - Modify your validation only allowing neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not.  
-	- During server starts, confirming that at least one of the words of the [dictionary](files/dictionary.json) can be formed with your shuffled board.
+	- During server starts, confirm that at least one of the words of the [dictionary](files/dictionary.json) can be formed with your shuffled board.
 - Add a player id to the validation request, keeping track (in memory) of how many valid words each player has submitted. Add an endpoint to expose these scores.
 - After successful validation, store the entry in a database and add to your response if the entry existed previously.
 
