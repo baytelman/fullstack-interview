@@ -98,7 +98,7 @@ Implement all the interactions described in sections "The app" and "Example".
 
 Pretend you are creating the backend for our game's lightweight client app, and that all logic will be performed at the server level. 
 
-You do NOT have to implement the client app (or modify your solution for Part 1, if you chose to answer it).
+This part is independent from Part 1: Do not modify your solution for Part 1.
 
 Implement a server using Node (ideally using Express, but other frameworks would work) to serve the following endpoints:
 
