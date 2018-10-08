@@ -66,7 +66,6 @@ Your deliverable should satisfy all these requirements:
 ---
 
 ## Part 1
-*Only if you want to be considered for Frontend / Full stack*
 
 ### Required
 
@@ -93,7 +92,7 @@ Implement all the interactions described in sections "The app" and "Example".
 ---
 
 ## Part 2
-*Only if you want to be considered for Backend / Full stack*
+*If you want to be considered for Full stack (Backend + Frontend), answer both Parts 1 and 2. If you are only interested in a Frontend position, skip Part 2. *
 
 ### Required 
 
