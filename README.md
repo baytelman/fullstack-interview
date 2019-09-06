@@ -1,22 +1,25 @@
-# Goodtalk • Interview • Letters game!
+# Noken • Interview • Letters game!
 
-*Version 1.1*
+*Version 1.2*
 
-We ask you to read this file carefully before you begin writing a solution. There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
+We ask you to read this file carefully before you begin writing a solution. 
+There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
 
-If you decide to continue with this process, write us back WHEN you expect to submit your solution. This is really important so we can better arrange to wait for you, specially if you want to take a little longer. 
+If you decide to continue with this process, write us back WHEN you expect to submit your solution. 
+This is really important so we can better arrange to wait for you, specially if you want to take a little bit longer. 
 
 If you decide NOT to continue with this process, let us know! ... So we don't keep sending your reminders.
 
 We sincerely thank you for your interest and your time.
 
 Best, 
-The Goodtalk team!
+The Noken team!
 
 ## Create a React JS or React Native app
 
 - You can use any boilerplate or start project. If you need help with this, let us know and we will share a quick-starter project promptly.
 - Keep your code separated from the boilerplate, so it's easier to review your work.
+- We prefer TypeScript or typed JavaScript.
 
 ### The app
 
@@ -52,7 +55,9 @@ If the user clicks the reset button, the board is reset.
 
 Your deliverable should satisfy all these requirements:
 
-- Explain if you are responding Part 1 (frontend), Part 2 (backend) or both (full stack). Part 3 is required.
+- Explain if you are responding Part 1 (frontend), Part 2 (backend) or both (full stack). Part 3 is required for both types of roles.
+
+- It should include *instructions on how to run* (installing dependencies, starting it, etc) and it shouldn't have any obscure environment requirements.
 
 - It should be submitted using one of the following alternatives:
     1. bitbucket.org or github.com PRIVATE repo (*Note: Do NOT use a public repo because other candidates could copy your response*).
@@ -60,14 +65,12 @@ Your deliverable should satisfy all these requirements:
     1. Email us your code.
     - *Note: Do NOT include `node_modules` or any other files that will be auto-generated*.
 
-- It should include instructions on how to run (installing dependencies, starting it, etc) and it shouldn't have any obscure environment requirements.
-
-
 ---
 
 ## Part 1
+*If you want to be considered for Full stack (Backend + Frontend), answer both Parts 1 and 2. If you are only interested in a Backend position, skip this part. *
 
-### Required
+### Required if applying to Full Stack or Front End positions
 
 Implement all the interactions described in sections "The app" and "Example".
 - Choose whatever would be easier/faster for you – React JS or React-Native.
@@ -92,9 +95,9 @@ Implement all the interactions described in sections "The app" and "Example".
 ---
 
 ## Part 2
-*If you want to be considered for Full stack (Backend + Frontend), answer both Parts 1 and 2. If you are only interested in a Frontend position, skip Part 2. *
+*If you want to be considered for Full stack (Backend + Frontend), answer both Parts 1 and 2. If you are only interested in a Frontend position, skip this part. *
 
-### Required 
+### Required if applying to Full Stack or Back End positions
 
 Pretend you are creating the backend for our game's lightweight client app, and that all logic will be performed at the server level. 
 
@@ -117,14 +120,14 @@ Your deliverable should satisfy 2 of the following requirements:
 - Modify your validation only allowing neighbor tiles to be selected sequentially.
     - In the example, `B C G` would be legal and `F A N` would not.  
 	- During server starts, confirm that at least one of the words of the [dictionary](files/dictionary.json) can be formed with your shuffled board.
-- Add a player id to the validation request, keeping track (in memory) of how many valid words each player has submitted. Add an endpoint to expose these scores.
+- Add a player id to the validation request, keeping track of how many valid words each player has submitted. Add an endpoint to expose these scores.
 - After successful validation, store the entry in a database and add to your response if the entry existed previously.
 
 ---
 
-## Part 3
+## Part 3 – Required for all applicants
 
-Pretend a co-worker from your current job (clearly not at Goodtalk!) submitted the following code. Imagine all external libraries and functions exist and do whatever they are supposed to do.
+Pretend a co-worker from your current job (clearly not at Noken!) submitted the following code. Imagine all external libraries and functions exist and do whatever they are supposed to do.
 
 - List the most severe problems or improvements opportunities within the following code, listing the worst first.
 
@@ -135,7 +138,7 @@ const MyServer = require('../../../aug2018/MyServer');
 import { MyUtility } from './shared_utils/MyUtility';
 const StringFormat = require('./shared_utils/StringFormat'); 
 
-const username = 'goodtalk-server';
+const username = 'noken-server';
 let password = '8%eHN-dskj@-77';
 
 function saveUser(user_object, owip) {
@@ -197,7 +200,7 @@ new MyServer({PORT: 8080}).start((request, response) => {
 ## Frequently asked question
 
 - Q: I really want to implement all the features of the optional section. Should I?
-    - No, you should not: Only implement the listed amount.
+    - No, you should not: Only implement the requested number.
     - We want a team of people with different skills, so understanding your strengths is a plus for us.
     - In fact, implementing all the features will be interpreted as lack of attention to detail.
 - Q: Can I use external libraries (npm)?
@@ -205,8 +208,9 @@ new MyServer({PORT: 8080}).start((request, response) => {
     - However, if some functionality is very easy to implement, try to implement it yourself (i.e. Don't install a library to figure out if a number is odd/even).
     - Choosing when and what libraries will speak about your judgement.
 - Q: This coding challenge is too long. Is it OK if I implement it partially?
-    - Although we recognize this exercise may take some time, it does measure if you have the skills we need to work at Goodtalk.
-    - Submitting an incomplete solution is acceptable, specially if you explain the reasons. However, a complete solution will increase the likelihood of being selected, and it will save time during our interview. 
+    - Although we recognize this exercise may take some time, it does measure if you have the skills we need to work at Noken.
+    - Submitting an incomplete solution is acceptable, specially if you explain the reasons. 
+    - However, a complete solution will increase the likelihood of being selected, and it will save time during our in-person interview. 
 
 ---
 
@@ -246,4 +250,4 @@ This board (obviously) does NOT include the following words from our [dictionary
 - STREET
 
 ## Thanks for your time!
-The Goodtalk team!
+The Noken team!
