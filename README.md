@@ -1,4 +1,4 @@
-# Noken • Interview • Letters game!
+# Noken • Fullstack Interview • Letters game!
 
 *Version 1.2*
 
