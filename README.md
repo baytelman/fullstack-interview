@@ -9,7 +9,7 @@
 We ask you to *read this file carefully* **before** you begin writing a solution. 
 There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
 
-If you decide to continue with this process, **write us back WHEN** you expect to submit your solution. 
+If you decide to continue with this process, **first, send us a message telling us WHAT DAY** you expect to submit your solution. 
 This is really important so we can better arrange to wait for you, specially if you want to take a little bit longer. 
 
 If you decide NOT to continue with this process, let us know! ... So we don't keep sending your reminders.
