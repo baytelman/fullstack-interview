@@ -1,8 +1,8 @@
-# Noken • Fullstack Interview • Letters game!
+# Enara Health • Fullstack Interview • Letters game!
 
-*Version 1.2*
+*Version 1.3*
 
-## This is a coding challenge for applicants interested in joining Noken.
+## This is a coding challenge for applicants interested in joining Enara Health.
 
 [Full job description](http://bit.ly/2lCAJR7)
 
@@ -17,7 +17,7 @@ If you decide NOT to continue with this process, let us know! ... So we don't ke
 We sincerely thank you for your interest and your time.
 
 Best, 
-The Noken team!
+The Enara Health team!
 
 ## Create a React JS or React Native app
 
@@ -131,7 +131,7 @@ Your deliverable should satisfy 2 of the following requirements:
 
 ## Part 3 – Required for all applicants
 
-Pretend a co-worker from your current job (clearly not at Noken!) submitted the following code. Imagine all external libraries and functions exist and do whatever they are supposed to do.
+Pretend a co-worker from your current job (clearly not at Enara Health!) submitted the following code. Imagine all external libraries and functions exist and do whatever they are supposed to do.
 
 - List the most severe problems or improvements opportunities within the following code, listing the worst first.
 
@@ -212,7 +212,7 @@ new MyServer({PORT: 8080}).start((request, response) => {
     - However, if some functionality is very easy to implement, try to implement it yourself (i.e. Don't install a library to figure out if a number is odd/even).
     - Choosing when and what libraries will speak about your judgement.
 - Q: This coding challenge is too long. Is it OK if I implement it partially?
-    - Although we recognize this exercise may take some time, it does measure if you have the skills we need to work at Noken.
+    - Although we recognize this exercise may take some time, it does measure if you have the skills we need to work at Enara Health.
     - Submitting an incomplete solution is acceptable, specially if you explain the reasons. 
     - However, a complete solution will increase the likelihood of being selected, and it will save time during our in-person interview. 
 
@@ -254,4 +254,4 @@ This board (obviously) does NOT include the following words from our [dictionary
 - STREET
 
 ## Thanks for your time!
-The Noken team!
+The Enara Health team!
