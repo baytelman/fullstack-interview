@@ -45,7 +45,7 @@ If the user clicks the reset button, the board is reset.
     A  B  C  D          A  B  C  D         [A] B  C  D         [A][B] C  D
     E  F  G  H          E [F] G  H          E [F] G  H          E [F] G  H
     I  J  K  L          I  J  K  L          I  J  K  L          I  J  K  L
-    M  N  O  P          M  N  O  P          M  N  O  P          M [N] O  P
+    M  N  O  P          M  N  O  P          M  N  O  P          M  N  O  P
             
    [          ]        [ F        ]        [ FA       ]        [ FAB      ]
 ```
