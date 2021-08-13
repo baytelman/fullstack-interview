@@ -27,6 +27,7 @@ The Enara Health team!
 - The user can select tile by clicking/tapping them. 
 	- **Extra points**: After the first letter, the user can only select neighbor tiles to the last tile selected.
 - At the bottom of the board, display the word formed by the selected tiles.
+	- **Extra points**: Validate if the word is contained in a [`dictionary.json`](files/dictionary.json) file. You can set up your board using the letters from our [secondary board file](files/test-board-2.json), which contains many words from the dictionary!
 - Add a button `(x)` to reset the board, deselecting all tiles and clearing the word.
 
 #### Example
