@@ -59,7 +59,7 @@ If the user clicks the reset button, the board is reset.
 	
 	- Implement styles using exclusively CSS, not images.
 
-        - Ignore "Valid" or "Invalid" part of the designs!
+        - Ignore "Valid" or "Invalid" part of the designs unless you go for the **extra points**!
 
 	- Layour for mobile media:
 
