@@ -24,7 +24,8 @@ The Enara Health team!
 
 - Our game will present a board with 16 tiles (4x4) in the center of the screen.
 - Each tile has a random letter (or you can read from a given json file: see [`test-board-1.json`](files/test-board-1.json) and [`test-board-2.json`](files/test-board-2.json)).
-- The user can select tile by clicking/tapping them.
+- The user can select tile by clicking/tapping them. 
+	- **Extra points**: After the first letter, the user can only select neighbor tiles to the last tile selected.
 - At the bottom of the board, display the word formed by the selected tiles.
 - Add a button `(x)` to reset the board, deselecting all tiles and clearing the word.
 
@@ -34,23 +35,24 @@ In the following example, the initial board presents the content of the [test js
 
 Then, the user clicks the F tile, which gets selected. The formed word is now `F`. The reset button is now enabled.
 
-The user selects the A tile by clicking it. The formed word is now `FA`. Finally, the user selects the N tile. The formed word is now `FAN`.
+The user selects the A tile by clicking it. The formed word is now `FA`. Finally, the user selects the B tile. The formed word is now `FAB`.
 
 If the user clicks the reset button, the board is reset.
 
 ```
               ( )                 (x)                 (x)                 (x)
-    A  B  C  D          A  B  C  D         [A] B  C  D         [A] B  C  D
+    A  B  C  D          A  B  C  D         [A] B  C  D         [A][B] C  D
     E  F  G  H          E [F] G  H          E [F] G  H          E [F] G  H
     I  J  K  L          I  J  K  L          I  J  K  L          I  J  K  L
     M  N  O  P          M  N  O  P          M  N  O  P          M [N] O  P
             
-   [          ]        [ F        ]        [ FA       ]        [ FAN      ]
+   [          ]        [ F        ]        [ FA       ]        [ FAB      ]
 ```
 
 ### Requirements
 
 - Choose whatever would be easier/faster for you – React JS or React-Native.
+- **Extra points**: Make sure you only let the user select neighbor tiles!
 - Make it look like the following designs:
 	- ReactJS only: Use *responsive* display for mobile and desktop.
 	
