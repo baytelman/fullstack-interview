@@ -23,7 +23,7 @@ The Enara Health team!
 ### The app
 
 - Our game will present a board with 16 tiles (4x4) in the center of the screen.
-- Each tile has a random letter (or you can read from a given json file: see [`test-board-1.json`](files/test-board-1.json) and [`test-board-2.json`](files/test-board-2.json)).
+- Upon load, each tile should be randomly assigned letter (or letters should be read on load from a given json file: see [`test-board-1.json`](files/test-board-1.json) and [`test-board-2.json`](files/test-board-2.json)).
 - The user can select tile by clicking/tapping them. 
 	- **Extra points**: After the first letter, the user can only select neighbor tiles to the last tile selected.
 - At the bottom of the board, display the word formed by the selected tiles.
