@@ -5,18 +5,22 @@
 ## This is a coding challenge for applicants interested in joining Enara Health.
 
 We ask you to *read this file completetly* **before** you begin working on your solution. 
+After reading all the instructions, please **estimate** when you expect to complete and deliver your solution and **send us a brief note**.
+You should only work on your solution **after you've read this file completely and you've send us your estimation!**
+
 There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
 
 We sincerely thank you for your interest and your time.
 
-Best, 
+Good luck! 
+
 The Enara Health team!
 
 ## Create a React JS or React Native app
 
 - You can use any boilerplate or start project. If you need help with this, let us know and we will share a quick-starter project promptly.
-- Keep your code separated from the boilerplate, so it's easier to review your work.
-- We prefer TypeScript or typed JavaScript.
+- Keep your code separated from the boilerplate, so it's easier to evaluate your work.
+- We strongly prefer TypeScript or typed JavaScript.
 
 ### The app
 
@@ -51,12 +55,12 @@ If the user clicks the reset button, the board is reset.
 
 ### Requirements
 
-- Choose whatever would be easier/faster for you – React JS or React-Native.
+- Choose whatever would be easier/faster for you – React JS or React-Native (unless you are applying for a specialized position).
 - **Extra points**: Make sure you only let the user select neighbor tiles!
-- Make it look like the following designs:
+- Make it look exactly like the following designs:
 	- ReactJS only: Use *responsive* display for mobile and desktop.
 	
-	- Implement styles using exclusively CSS, not images.
+	- Match the exact pixel size and color of our designs using exclusively CSS (not background images).
 
         - Ignore "Valid" or "Invalid" part of the designs unless you go for the **extra points**!
 
@@ -81,7 +85,9 @@ Your deliverable should satisfy all these requirements:
     1. Upload a compressed file somewhere and send us the URL.
     - *Note: Do NOT include `node_modules` or any other files that will be auto-generated*.
 
-Once you've published your solution, send us a note in the same hiring platform you applied (GetOnBoard, LinkedIn, Angel.co), so our team can take a look. 
+- **Extra points**: Deploy your solution using a free hosting service and send us the URL.
+
+Once you've published your solution, send us a note with the links via **the same hiring platform** you applied (GetOnBoard, LinkedIn, Angel.co), so our team can take a look. 
 
 ---
 
@@ -89,9 +95,9 @@ Once you've published your solution, send us a note in the same hiring platform 
 
 We will evaluate the following aspects of your deliverable:
 
-- Requirements: This includes "Does it look exactly like our designs", "Does it implement all rules of the game" and "Do you follow the delivery instructions".
-- Code quality: This includes following coding standards, formatting and other quality aspects.
-- Code design: This includes design patterns and architecture, modularity, maintanability, readability, and other code design aspects.  
+- **Requirements**: This includes "Does it look exactly like our designs", "Does it implement all rules of the game" and "Do you follow the delivery instructions".
+- **Code quality**: This includes following coding standards, formatting and other quality aspects.
+- **Code design**: This includes design patterns and architecture, modularity, maintanability, readability, and other code design aspects.  
 
 ---
 
