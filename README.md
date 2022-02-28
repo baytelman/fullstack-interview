@@ -1,6 +1,6 @@
 # Enara Health • Fullstack Interview • Letters game!
 
-*Version 1.3*
+*Version 1.4*
 
 ## This is a coding challenge for applicants interested in joining Enara Health.
 
