@@ -4,8 +4,6 @@
 
 ## This is a coding challenge for applicants interested in joining Enara Health.
 
-[Full job description](https://www.getonbrd.com/jobs/frontend-react-rn-developer-enara-health-sv-ny-scl-remote)
-
 We ask you to *read this file completetly* **before** you begin working on your solution. 
 There is a Q&A and an example section at the end of the file, which may help you to complete this challenge faster.
 
@@ -78,15 +76,31 @@ Your deliverable should satisfy all these requirements:
 
 - It should include *instructions on how to run* (installing dependencies, starting it, etc) – Avoid weird environment requirements.
 
-- It should be submitted using one of the following alternatives:
+- It should be published using one of the following alternatives:
     1. bitbucket.org or github.com repo.
     1. Upload a compressed file somewhere and send us the URL.
     - *Note: Do NOT include `node_modules` or any other files that will be auto-generated*.
+
+Once you've published your solution, send us a note in the same hiring platform you applied (GetOnBoard, LinkedIn, Angel.co), so our team can take a look. 
+
+---
+
+## Evaluation criteria
+
+We will evaluate the following aspects of your deliverable:
+
+- Requirements: This includes "Does it look exactly like our designs", "Does it implement all rules of the game" and "Do you follow the delivery instructions".
+- Code quality: This includes following coding standards, formatting and other quality aspects.
+- Code design: This includes design patterns and architecture, modularity, maintanability, readability, and other code design aspects.  
 
 ---
 
 ## Frequently asked question
 
+- Q: How long do I have to complete and deliver my challenge?
+    - You should take the time you need to create this: Most likely, you are currently working so you have little free time, so we understand this won't be immediate.
+    - However, as soon as posible, __send us a note__ describing your estimation and letting us know __when__ do you expect to submit your work.
+    - If this time is not compatible with the process timing, we will let you know and we can agree in a time that works for both of us. Most likely, your initial estimation will be within our process timing.
 - Q: Can I use external libraries (npm)?
     - Of course you can!
     - However, if some functionality is very easy to implement, try to implement it yourself (i.e. Don't install a library to figure out if a number is odd/even).
